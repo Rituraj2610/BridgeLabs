@@ -1,4 +1,4 @@
-package org.rituraj.February.Assignment1.Level1.BookDetails;
+package org.rituraj.February.Assignment2.Level1.BookDetails;
 
 public class Main {
     public static void main(String[] args) {

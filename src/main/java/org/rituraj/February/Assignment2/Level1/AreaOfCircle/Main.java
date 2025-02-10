@@ -1,4 +1,4 @@
-package org.rituraj.February.Assignment1.Level1.AreaOfCircle;
+package org.rituraj.February.Assignment2.Level1.AreaOfCircle;
 
 public class Main {
     public static void main(String[] args) {

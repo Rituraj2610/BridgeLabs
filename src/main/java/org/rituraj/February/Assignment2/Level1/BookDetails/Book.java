@@ -1,4 +1,4 @@
-package org.rituraj.February.Assignment1.Level1.BookDetails;
+package org.rituraj.February.Assignment2.Level1.BookDetails;
 
 class Book {
     private String title;
