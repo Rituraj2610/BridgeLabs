@@ -1,0 +1,16 @@
+package org.rituraj.collections.set;
+
+import java.util.*;
+
+public class SetToSortedList {
+    public static List<Integer> convertToSortedList(Set<Integer> set) {
+        List<Integer> sortedList = new ArrayList<>(set);
+        Collections.sort(sortedList);
+        return sortedList;
+    }
+
+    public static void main(String[] args) {
+        Set<Integer> unsortedSet = new HashSet<>(Arrays.asList(5, 3, 9, 1));
+        System.out.println("Sorted List: " + convertToSortedList(unsortedSet));
+    }
+}

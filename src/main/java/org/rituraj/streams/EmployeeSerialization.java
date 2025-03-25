@@ -1,4 +1,4 @@
-package org.rituraj.collections.streams;
+package org.rituraj.streams;
 
 import java.io.*;
 import java.util.Arrays;

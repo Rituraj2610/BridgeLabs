@@ -1,4 +1,4 @@
-package org.rituraj.collections.streams;
+package org.rituraj.streams;
 import java.io.*;
 class PipedStreamExample {
     public static void main(String[] args) throws IOException {
