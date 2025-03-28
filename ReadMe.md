@@ -29,3 +29,14 @@
 **Branch:**
 - `Week-4_Java_Collections_Streams_And_Generics`
 
+---
+
+## Date 28 March 2025:
+**Concepts learnt:**
+-  Regex - Common Patterns: Email Validation, Password
+   Strength, Phone Number Format etc.
+-  Java Regex API: Using Pattern and Matcher, Methods:
+   find(), matches(), replaceAll()
+
+**Branch:**
+-  `Week-4_Java_Collections_Streams_And_Generics`
