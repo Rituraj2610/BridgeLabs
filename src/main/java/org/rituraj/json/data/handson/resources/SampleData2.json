@@ -1,0 +1,21 @@
+[ {
+  "name" : "Alice",
+  "age" : 18,
+  "subjects" : [ "Math", "Science", "History" ]
+}, {
+  "name" : "Bob",
+  "age" : 20,
+  "subjects" : [ "Physics", "Chemistry", "Biology" ]
+}, {
+  "name" : "Charlie",
+  "age" : 17,
+  "subjects" : [ "Economics", "English", "Political Science" ]
+}, {
+  "name" : "Daisy",
+  "age" : 19,
+  "subjects" : [ "Computer Science", "Statistics", "Artificial Intelligence" ]
+}, {
+  "name" : "Ethan",
+  "age" : 21,
+  "subjects" : [ "Psychology", "Philosophy", "Sociology" ]
+} ]
