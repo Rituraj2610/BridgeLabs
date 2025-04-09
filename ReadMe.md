@@ -51,3 +51,41 @@
 
 **Branch:**
 -  `Week-4_Java_Collections_Streams_And_Generics`
+
+---
+
+### Date 31 March 2025:
+**Concepts learnt:**
+- Annotation - Introduction to Annotations, Common Built-in Annotations, Creating Custom Annotations, Defining Annotations
+
+**Branch:**
+- `Week-4_Java_Collections_Streams_And_Generics`
+
+---
+
+### Date 1 April 2025:
+**Concepts learnt:**
+- Reflection - Understanding of Reflection, Using Reflection in Java, Annotations and Reflection
+
+**Branch:**
+- `Week-4_Java_Collections_Streams_And_Generics`
+
+---
+
+### Date 4 April 2025:
+**Concepts learnt:**
+- CSV Data Handling - Introduction to CSV, Reading CSV Files, Writing CSV Files, Parsing CSV Data, Data Validation
+- JSON Handling - Introduction to JSON, Reading JSON Data, Writing JSON Data, Parsing JSON Data, JSON Schema Validation
+
+**Branch:**
+- `Week-5_IO_Programming`
+
+---
+
+### Date 7 April 2025:
+**Concepts learnt:**
+- Multi-Threading Concepts - Using Thread Class and Using Runnable Interface
+- Life Cycle and States of Thread in Java
+
+**Branch:**
+- `Week-5_IO_Programming`
