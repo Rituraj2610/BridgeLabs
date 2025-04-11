@@ -89,3 +89,34 @@
 
 **Branch:**
 - `Week-5_IO_Programming`
+
+---
+
+### Date 8 April 2025:
+**Concepts learnt:**
+- MySQL, DDL, DML, Table Indexing
+
+**Branch:**
+- `Week-6_DBMS_JDBC`
+
+---
+
+### Date 10 April 2025:
+**Concepts learnt:**
+- ER Diagram
+- Normalization forms
+- Joins
+
+**Branch:**
+- `Week-6_DBMS_JDBC`
+
+---
+
+### Date 11 April 2025:
+**Concepts learnt:**
+- JDBC
+- Stored Procedure
+- Triggers
+
+**Branch:**
+- `Week-6_DBMS_JDBC`
