@@ -1,0 +1,51 @@
+Q:Create a trigger to log every insert into the employees table into a new table called employee_logs.
+
+use newdb;
+
+DELIMITER $$
+create trigger log_entry
+AFTER INSERT ON employees
+FOR EACH ROW
+BEGIN
+	INSERT INTO employee_logs (emp_name, action_type) values (NEW.name, 'insert');
+END $$
+DELIMITER ;
+
+ INSERT INTO employees (name, department, salary, joining_date) VALUES ('a', 'HR', 50000, '2022-05-15');
+ select * from employee_logs;
+
+ -----------------------------------------------
+Q:Write a BEFORE INSERT trigger to ensure salary is not negative.
+
+ use newdb;
+
+ DELIMITER $$
+ CREATE trigger check_non_neg_salary
+ BEFORE INSERT ON employees
+ FOR EACH ROW
+ BEGIN
+ 	IF NEW.salary < 0 THEN
+     SIGNAL sqlstate '45000'
+     SET MESSAGE_TEXT='salary cant be neg';
+     END IF;
+ END $$
+ DELIMITER ;
+
+  INSERT INTO employees (name, department, salary, joining_date) VALUES ('B', 'HR', -55, '2022-05-15');
+
+----------------------------------------------------
+Q: Create an AFTER UPDATE trigger to log old and new salary into a table salary_changes.
+
+ use newdb;
+
+ DELIMITER $$
+ CREATE TRIGGER log_old_new_salary
+ AFTER UPDATE ON employees
+ for each row
+ BEGIN
+ 	INSERT INTO salary_changes (emp_id, emp_name, old_salary, new_salary) VALUES (NEW.id, NEW.name, OLD.salary, NEW.salary);
+ END $$
+ DELIMITER ;
+
+ update employees set salary = 1000 where name = 'a';
+ select * from salary_changes;

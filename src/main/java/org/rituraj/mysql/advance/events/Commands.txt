@@ -1,0 +1,29 @@
+Q: Create an event that deletes employees who joined before 2020.
+
+use newdb;
+
+DELIMITER $$
+CREATE event evt_delete_empl
+ON schedule EVERY 1 MONTH
+DO
+BEGIN
+	delete from employees where YEAR(joining_date) < 2020;
+END $$
+DELIMITER ;
+
+
+----------------------------------------------------
+Q: Create a one-time event to increase HR department salaries by 5%.
+
+DELIMITER $$
+
+CREATE EVENT increase_hr_salaries
+ON SCHEDULE AT '2025-04-13 00:00:00'
+DO
+BEGIN
+    UPDATE employees
+    SET salary = salary * 1.05
+    WHERE department = 'HR';
+END $$
+
+DELIMITER ;

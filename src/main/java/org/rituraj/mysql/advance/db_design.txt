@@ -1,0 +1,35 @@
+ CREATE TABLE employees (
+    ->     id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     name VARCHAR(100),
+    ->     department VARCHAR(50),
+    ->     salary DECIMAL(10,2),
+    ->     joining_date DATE
+    -> );
+
+
+
+CREATE TABLE employees_backup (
+    ->     id INT,
+    ->     name VARCHAR(100),
+    ->     department VARCHAR(50),
+    ->     salary DECIMAL(10,2),
+    ->     joining_date DATE,
+    ->     deleted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    -> );
+
+
+ CREATE TABLE salary_changes (
+     ->     change_id INT AUTO_INCREMENT PRIMARY KEY,
+     ->     emp_id INT,
+     ->     emp_name VARCHAR(100),
+     ->     old_salary DECIMAL(10,2),
+     ->     new_salary DECIMAL(10,2),
+     ->     changed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+     -> );
+
+ CREATE TABLE employee_logs (
+     log_id INT AUTO_INCREMENT PRIMARY KEY,
+     emp_name VARCHAR(100),
+     action_type VARCHAR(20),
+     action_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+ );

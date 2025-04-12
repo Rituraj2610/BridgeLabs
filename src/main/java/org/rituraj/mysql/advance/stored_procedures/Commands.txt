@@ -1,0 +1,27 @@
+Q: Write a procedure to count the number of employees in a department.
+
+use newdb;
+
+DELIMITER $$
+CREATE PROCEDURE sp_empl_count_in_a_dept()
+BEGIN
+	SELECT department, COUNT(*) from employees GROUP BY department;
+END $$
+DELIMITER ;
+
+CALL sp_empl_count_in_a_dept();
+
+-----------------------------
+Q: Write a procedure that takes a name and returns the joining date of that employee.
+
+use newdb;
+
+DELIMITER $$
+CREATE PROCEDURE sp_joinng_date(IN name_var VARCHAR(50), OUT jd DATE)
+BEGIN
+	select joining_date INTO jd from employees where name=name_var;
+END $$
+DELIMITER ;
+
+CALL sp_joinng_date('Alice', @jd);
+SELECT @jd;
