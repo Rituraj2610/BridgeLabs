@@ -120,3 +120,13 @@
 
 **Branch:**
 - `Week-6_DBMS_JDBC`
+
+---
+
+### Date 15 April 2025:
+**Concepts learnt:**
+- Tomcat
+- Servlet
+
+**Branch:**
+- `Week-6_DBMS_JDBC`
